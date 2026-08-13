@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site</title>
+  <style>
+    /* Estilo do header */
+    header {
+      background-color: #333;   /* cor de fundo */
+      color: white;             /* cor do texto */
+      padding: 15px;            /* espaço interno */
+      display: flex;            /* coloca elementos lado a lado */
+      justify-content: space-between; /* separa título e links */
+      align-items: center;      /* centraliza verticalmente */
+    }
+
+    /* Estilo do título */
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Estilo da lista de links */
+    nav ul {
+      list-style: none;   /* remove bolinhas */
+      margin: 0;
+      padding: 0;
+      display: flex;      /* coloca links em linha */
+      gap: 20px;          /* espaço entre links */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none; /* remove sublinhado */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline; /* efeito ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p>Conteúdo da página aqui...</p>
+  </main>
+</body>
+</html>
