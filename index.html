@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Xadrez</title>
 </head>
+
+<body>
   <main>
-    <body>
-      <header>
+    <header>
+      <h1>Xadrez</h1>
+      <nav>
+        <ul>
+          <!-- 1. Menu (Início, Sobre, Contato) -->
+          <li class="dropdown">
+            <a href="#">Menu ▾</a>
+            <ul class="submenu">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </li>
+
+          <!-- 2. Fases do Jogo (com Abertura, Meio Jogo, Finais e sub-itens) -->
+          <li class="dropdown">
+            <a href="#">Fases do Jogo ▾</a>
+            <ul class="submenu">
+              <li class="dropdown-sub">
+                <a href="Abertura.html" target="_blank">Abertura ▸</a>
+                <ul class="sub-submenu">
+                  <li><a href="Estratégia.html" target="_blank">Estratégia</a></li>
+                  <li><a href="Calculo.html" target="_blank">Cálculo</a></li>
+                  <li><a href="Tática.html" target="_blank">Tática</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="meio_jogo.html" target="_blank">Meio Jogo ▸</a>
+                <ul class="sub-submenu">
+                  <li><a href="Estratégia.html" target="_blank">Estratégia</a></li>
+                  <li><a href="Calculo.html" target="_blank">Cálculo</a></li>
+                  <li><a href="Tática.html" target="_blank">Tática</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="Finais.html" target="_blank">Finais ▸</a>
+                <ul class="sub-submenu">
+                  <li><a href="Estratégia.html" target="_blank">Estratégia</a></li>
+                  <li><a href="Calculo.html" target="_blank">Cálculo</a></li>
+                  <li><a href="Tática.html" target="_blank">Tática</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 3. Curiosidades -->
+          <li class="dropdown">
+            <a href="#">Curiosidades ▾</a>
+            <ul class="submenu">
+              <li><a href="Saga_dos_campeões_do_mundo.html" target="_blank">Saga dos Campeões</a></li>
+              <li><a href="xadrez_de_computadores.html" target="_blank">Xadrez de Computadores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <h1>Xadrez</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-    <h1>Xadrez</h1>
-    
+
     <p>O xadrez é uma agradável atividade lúdica, mas também pode ser uma arte, um esporte e uma Ciência praticada por
-        dois jogadores que movem peças brancas e pretas, alternadamente, num campo denominado tabuleiro de xadrez. O
-        objetivo do jogo é dar xeque-mate no rei do adversário.</p>
+      dois jogadores que movem peças brancas e pretas, alternadamente, num campo denominado tabuleiro de xadrez. O
+      objetivo do jogo é dar xeque-mate no rei do adversário.</p>
 
     <h2>O Tabuleiro de Xadrez</h2>
-    
+
     <p>O tabuleiro é formado por 64 casas, dispostas alternadamente, sendo 32 brancas e 32 pretas.</p>
-    
+
     <img src="Pasted image 20260628111735.png" alt="Forma correta de se posicionar o tabuleiro">
-    
+
     <p>O tabuleiro é colocado de modo que a primeira casa à direita de cada jogador seja branca. O tabuleiro é composto
-        de 8 fileiras, 8 colunas e 26 diagonais. Fileira é uma sequência de casas brancas e pretas dispostas,
-        alternadamente, em posição horizontal. Tem sempre 8 casas. Coluna é uma sequência de casas brancas e pretas
-        dispostas, alternadamente, em posição vertical. Tem sempre 8 casas. Diagonal é uma sequência de casas de mesma
-        cor, dispostas num mesmo sentido, variando de 2 a 8 casas. As fileiras são numeradas de 1 a 8 e as colunas
-        recebem letras de a até h.</p>
-        
-    <img src="Pasted image 20260628111952.png" alt="Imagem que mostra as diagonais, horizontais e verticais do tabuleiro">
-    
+      de 8 fileiras, 8 colunas e 26 diagonais. Fileira é uma sequência de casas brancas e pretas dispostas,
+      alternadamente, em posição horizontal. Tem sempre 8 casas. Coluna é uma sequência de casas brancas e pretas
+      dispostas, alternadamente, em posição vertical. Tem sempre 8 casas. Diagonal é uma sequência de casas de mesma
+      cor, dispostas num mesmo sentido, variando de 2 a 8 casas. As fileiras são numeradas de 1 a 8 e as colunas recebem
+      letras de a até h.</p>
+
+    <img src="Pasted image 20260628111952.png"
+      alt="Imagem que mostra as diagonais, horizontais e verticais do tabuleiro">
+
     <p>Cada casa do tabuleiro é identificada por um endereço que é formado pela letra de sua coluna e o número de sua
-        fileira.</p>
-        
+      fileira.</p>
+
     <img src="Pasted image 20260628112048.png" alt="Imagem que mostra as coordenadas das casas do Tabuleiro">
-    
-    <div class="fases-xadrez">
-        <p>O Xadrez é divido em três fases de jogo: 
-            <a href="Abertura.html" target="_blank">Abertura</a>, 
-            <a href="meio_jogo.html" target="_blank">Meio Jogo</a> e 
-            <a href="Finais.html" target="_blank">Finais</a>. 
-            Dentro de cada uma dessas etapas há 
-            <a href="Estratégia.html" target="_blank">Estratégia</a>, 
-            <a href="Calculo.html" target="_blank">Cálculo</a> e 
-            <a href="Tática.html" target="_blank">Tática</a>.
-            <br>
-            Curiosidades:
-            <a href="Saga_dos_campeões_do_mundo.html" target="_blank">Saga dos campeões do mundo</a> e
-            <a href="xadrez_de_computadores.html" target="_blank">xadrez de computadores</a>
-  <h1>ATENÇÃO! PÁGINA EM COSTRUÇÃO...</h1>
-        </p>
-    </div>
-</body>
+      <h1>ATENÇÃO! PÁGINA EM CONSTRUÇÃO...</h1>
   </main>
+</body>
+
 </html>

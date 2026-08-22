@@ -21,81 +21,107 @@ header {
 
 /* Estilo do título no header */
 header h1 {
+    color: white;
     margin: 0;
     font-size: 24px;
     border-bottom: none;
     padding-bottom: 0;
 }
 
-/* Estilo da lista de links (navegação) */
+/* Espaçamento gigantesco entre os menus principais do cabeçalho */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 80px; /* Espaço bem amplo entre os menus principais */
+}
+
+nav li {
+    position: relative;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    padding: 5px 0;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para os títulos principais do corpo da página */
-h1 {
-    text-align: center;
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #2980b9;
-    margin-top: 30px;
-}
-
-/* Estilo para os parágrafos de texto */
-p {
-    text-align: justify;
-    margin-bottom: 15px;
-    font-size: 1.1em;
-}
-
-/* Estilo para as imagens */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
+/* --- 1º Nível: Submenu (Independente por item) --- */
+nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2980b9;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 180px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    flex-direction: column;
 }
 
-/* Estilo para os links gerais */
-a {
-    color: #e74c3c;
+/* Mostra apenas o submenu do item específico que recebeu o hover */
+nav li.dropdown:hover > .submenu {
+    display: flex;
+}
+
+nav .submenu li {
+    padding: 8px 15px;
+}
+
+nav .submenu li a {
+    font-size: 0.9em;
+    color: white;
+}
+
+nav .submenu li a:hover {
+    background-color: #3498db;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Efeito ao passar o mouse por cima dos links */
-a:hover {
-    text-decoration: underline;
-    color: #c0392b;
+/* --- 2º Nível: Sub-submenu (Independente para cada fase) --- */
+nav .submenu li.dropdown-sub {
+    position: relative;
 }
 
-/* Box das fases do xadrez */
-.fases-xadrez {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #3498db;
-    margin-top: 30px;
+nav .sub-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Abre ao lado do item pai correspondente */
+    background-color: #1b4f72;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    flex-direction: column;
+}
+
+/* Mostra apenas o sub-submenu da fase específica que recebeu o hover */
+nav .submenu li.dropdown-sub:hover > .sub-submenu {
+    display: flex;
+}
+
+nav .sub-submenu li {
+    padding: 8px 15px;
+}
+
+nav .sub-submenu li a {
+    font-size: 0.9em;
+    color: white;
+}
+
+nav .sub-submenu li a:hover {
+    background-color: #2980b9;
 }
