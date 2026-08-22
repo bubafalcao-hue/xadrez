@@ -1,94 +1,5 @@
-
-        /* Estilos básicos para deixar a página com um padrão elegante */
-        /* Estilo do header */
-    header {
-      background-color: #333;   /* cor de fundo */
-      color: white;             /* cor do texto */
-      padding: 15px;            /* espaço interno */
-      display: flex;            /* coloca elementos lado a lado */
-      justify-content: space-between; /* separa título e links */
-      align-items: center;      /* centraliza verticalmente */
-    }
-
-    /* Estilo do título */
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    /* Estilo da lista de links */
-    nav ul {
-      list-style: none;   /* remove bolinhas */
-      margin: 0;
-      padding: 0;
-      display: flex;      /* coloca links em linha */
-      gap: 20px;          /* espaço entre links */
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none; /* remove sublinhado */
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline; /* efeito ao passar o mouse */
-    } body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
-        }
-
-        p {
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        a {
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #c0392b;
-        }
-
-        .fases-xadrez {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            border-left: 5px solid #3498db;
-            margin-top: 30px;
-        }
-/* Configurações gerais da página */
+/* Estilos básicos para deixar a página com um padrão elegante */
+/* Estilo do header */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -97,7 +8,107 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+header {
+    background-color: #4e4848;
+    /* cor de fundo */
+    color: white;
+    /* cor do texto */
+    padding: 15px;
+    /* espaço interno */
+    display: flex;
+    /* coloca elementos lado a lado */
+    justify-content: space-between;
+    /* separa título e links */
+    align-items: center;
+    /* centraliza verticalmente */
+}
+
+/* Estilo do título */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilo da lista de links */
+nav ul {
+    list-style: none;
+    /* remove bolinhas */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* coloca links em linha */
+    gap: 20px;
+    /* espaço entre links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    /* remove sublinhado */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* efeito ao passar o mouse */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 30px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c0392b;
+}
+
+.fases-xadrez {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #3498db;
+    margin-top: 30px;
+}
+
+/* Configurações gerais da página */
 
 /* Estilo para os títulos principais */
 h1 {
