@@ -1,60 +1,3 @@
-
-        /* Estilos básicos para deixar a página com um padrão elegante */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
-        }
-
-        p {
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        a {
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #c0392b;
-        }
-
-        .fases-xadrez {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            border-left: 5px solid #3498db;
-            margin-top: 30px;
-        }
 /* Configurações gerais da página */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -66,13 +9,55 @@ body {
     padding: 20px;
 }
 
-/* Estilo para os títulos principais */
+/* Estilo do header (cabeçalho) */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do título no header */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Estilo da lista de links (navegação) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os títulos principais do corpo da página */
 h1 {
     text-align: center;
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
     margin-bottom: 20px;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 30px;
 }
 
 /* Estilo para os parágrafos de texto */
@@ -82,7 +67,17 @@ p {
     font-size: 1.1em;
 }
 
-/* Estilo para os links */
+/* Estilo para as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os links gerais */
 a {
     color: #e74c3c;
     text-decoration: none;
@@ -93,4 +88,14 @@ a {
 a:hover {
     text-decoration: underline;
     color: #c0392b;
+}
+
+/* Box das fases do xadrez */
+.fases-xadrez {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #3498db;
+    margin-top: 30px;
 }
