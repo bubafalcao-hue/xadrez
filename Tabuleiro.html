@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Livro de Xadrez Interativo</title>
+    
+    <!-- 1. Carregamos o CSS da biblioteca do tabuleiro -->
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    
+    <!-- Um CSS básico nosso só para organizar o layout -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .conteudo-livro {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* Onde o tabuleiro vai morar */
+        #meu-tabuleiro {
+            width: 400px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteudo-livro">
+        <h1>Capítulo 1: O Mate do Pastor</h1>
+        <p>No diagrama abaixo, analisamos a posição inicial de uma das armadilhas mais famosas do xadrez para iniciantes:</p>
+        
+        <!-- 2. A div que vai se transformar no tabuleiro -->
+        <div id="meu-tabuleiro"></div>
+
+        <p>Como as brancas podem aproveitar a fraqueza em f7? Vamos estudar isso nos próximos parágrafos.</p>
+    </div>
+
+    <!-- 3. Carregamos o jQuery (necessário para essa versão do chessboard) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- 4. Carregamos o JavaScript da biblioteca de xadrez -->
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+    <!-- 5. O SEU código JavaScript para inicializar o tabuleiro -->
+    <script>
+        // Aqui dizemos para a biblioteca transformar a div 'meu-tabuleiro' em um tabuleiro na posição inicial
+        var tabuleiro = Chessboard('meu-tabuleiro', 'start');
+    </script>
+
+</body>
+</html>
